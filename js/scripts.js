@@ -1,21 +1,23 @@
 $(document).ready(function() {
 
   //Business Logic
-  let numbers = []
+  let outputArray = []
 
-  function robogersCountdown(input) {
+  function robogersCountUp(input) {
     let numbers = [];
 
-    for (let i = 1; i <= input; i++) {
+    for (let i = 0; i <= input; i++) {
       numbers.unshift(i);
+      numbers = numbers.sort();
     }
     return numbers;
-  } 
+  }
+console.log(robogersCountUp(5)) 
 
   function robogersBeep(array) {
     for (let i = 0; i < array.length; i++) {
       if ((array[i]) === "1")
-        numbers.push("Beep!")
+        outputArray.push("Beep!")
         console.log(numbers);
     }
   }
