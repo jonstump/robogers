@@ -14,12 +14,12 @@ $(document).ready(function() {
 console.log(robogersCountUp(5)) 
 
 
-  function robogersBeep() {
+  function robogersBeep(array) {
     for (const number of numbers){
-      for (let i = 0; i < number; i++) {
-        if ((numbers[i]) === 1) {
+      for (let i = 0; i < array; i++) {
+        if ((array[i]) === 1) {
           outputArray.push("Beep!")
-        } else outputArray.push(number);
+        } else outputArray.push(array)
       }  
     }
   }
@@ -39,7 +39,7 @@ console.log(outputArray)
 
     function robogers(stringArray) {
       robogersCountdown(stringArray);
-      robogersBeep(stringArray);
+      robogersBeep();
       robogersBoop(stringArray);
       robogersNeighbor(stringArray);
     }
