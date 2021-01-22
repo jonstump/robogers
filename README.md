@@ -17,19 +17,19 @@ Mr. Roboger's Neighborhood
 <br/>
 **Test:** For numbers containing 1: replace with the phrase "Beep!"
 <br/>
-**Expect:**  robogers("1").toEqual("Beep!")
+**Expect:**  robogers("10").toEqual("Beep!")
 
 **Describe:** robogers()
 <br/>
 **Test:** For numbers containing 2: replace with the phrase "Boop!"
 <br/>
-**Expect:** robogers("2").toEqual("Boop!")
+**Expect:** robogers("20").toEqual("Boop!")
 
 **Describe:** robogers()
 <br/>
 **Test:** For numbers containing 3: replace with the phrase "Won't you be my neighbor?"
 <br/>
-**Expect:** robogers("3").toEqual("Won't you be my neighbor")
+**Expect:** robogers("30").toEqual("Won't you be my neighbor")
 
 **Describe:** robogers()
 <br/>
