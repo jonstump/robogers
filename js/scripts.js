@@ -1,11 +1,10 @@
 $(document).ready(function() {
 
   //Business Logic
-  let outputArray = []
+  let outputArray = [];
+  let numbers = [];
 
   function robogersCountUp(input) {
-    let numbers = [];
-
     for (let i = 0; i <= input; i++) {
       numbers.unshift(i);
       numbers = numbers.sort();
@@ -14,29 +13,18 @@ $(document).ready(function() {
   }
 console.log(robogersCountUp(5)) 
 
-  function robogersBeep(array) {
+
+  function robogersBeep(numbers) {
     for (let i = 0; i < array.length; i++) {
-      if ((array[i]) === "1")
+      if ((array[i]) === 1) {
         outputArray.push("Beep!")
         console.log(numbers);
+      } else outputArray.push(array[i]); 
     }
   }
+console.log(outputArray)
 
-  function robogersBoop(array) {
-    for (let i = 0; i < array.length; i++) {
-      if ((array[i]) === "2")
-        numbers.push("Boop!")
-        console.log(numbers);
-    }
-  }
 
-  function robogersNeighbor(array) {
-    for (let i = 0; i < array.length; i++) {
-      if ((array[i]) === "3")
-        numbers.push("Won't you be my Neighbor!")
-        console.log(numbers);
-    }
-  }
 
   //User Logic
   $('form').submit(function(submit) {
