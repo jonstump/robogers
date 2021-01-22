@@ -15,9 +15,9 @@ console.log(robogersCountUp(15))
 
   function robogersNeighbor(numbers) {
     for (const number of numbers){
-        if ((number) === 3) {
+        if ((String.valueOf(number)) === "*3*") {
           outputArray.push("Won't you be my neighbor?")
-        } else if ((number) !== 3) {
+        } else if ((String.valueOf(number)) !== "*3") {
           (outputArray.push(number))
         } else {
           break;
