@@ -19,8 +19,9 @@ $(document).ready(function() {
   //User Logic
   $('form').submit(function(submit) {
     submit.preventDefault();
-    const input = $('input#numbers').val();
+    const input = $('input#userNumber').val();
     const numArray = input.split(" ");
+    console.log(numArray);
 
     function robogers(numArray) {
       robogersBeep(numArray);
