@@ -7,23 +7,24 @@ $(document).ready(function() {
   function robogersCountUp(input) {
     for (let i = 0; i <= input; i++) {
       numbers.unshift(i);
-      numbers = numbers.sort();
     }
     return numbers
   }
-console.log(robogersCountUp(5)) 
+console.log(robogersCountUp(15)) 
 
 
-  function robogersBeep(numbers) {
+  function robogersNeighbor(numbers) {
     for (const number of numbers){
-      for (let i = -1; i < number; i++) {
-        if ((number) === 1) {
-          outputArray.push("Beep!")
-        } else outputArray.push(number)
+        if ((number) === 3) {
+          outputArray.push("Won't you be my neighbor?")
+        } else if ((number) !== 3) {
+          (outputArray.push(number))
+        } else {
+          break;
+        }
       }  
     }
-  }
-console.log(robogersBeep(numbers))
+console.log(robogersNeighbor(numbers))
 
 
 
