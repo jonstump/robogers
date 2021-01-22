@@ -19,6 +19,14 @@ $(document).ready(function() {
     }
   }
 
+  function robogersNeighbor(array) {
+    for (let i = 0; i < array.length; i++) {
+      if ((array[i]) === "3")
+        numbers.push("Won't you be my Neighbor!")
+        console.log(numbers);
+    }
+  }
+
   //User Logic
   $('form').submit(function(submit) {
     submit.preventDefault();
@@ -31,7 +39,7 @@ $(document).ready(function() {
     function robogers(stringArray) {
       robogersBeep(stringArray);
       robogersBoop(stringArray);
-      //robogersNeighbor(stringArray);
+      robogersNeighbor(stringArray);
     }
 
     robogers(stringArray);
