@@ -3,6 +3,9 @@ $(document).ready(function() {
   //Business Logic
   let outputArray = [];
   let numbers = [];
+  let numbersString = numbers.map(function(e) {
+    return e.toString()
+  });
 
   function robogersCountUp(input) {
     for (let i = 0; i <= input; i++) {
@@ -12,19 +15,19 @@ $(document).ready(function() {
   }
 console.log(robogersCountUp(15)) 
 
-
   function robogersNeighbor(numbers) {
+    const numberToString = number.toString();
     for (const number of numbers){
-        if ((String.valueOf(number)) === "*3*") {
+        if ((numberToString) === "*3*") {
           outputArray.push("Won't you be my neighbor?")
-        } else if ((String.valueOf(number)) !== "*3") {
+        } else if ((numberToString) !== "*3*") {
           (outputArray.push(number))
         } else {
           break;
         }
       }  
     }
-console.log(robogersNeighbor(numbers))
+console.log(robogersNeighbor(numbersString))
 
 
 
