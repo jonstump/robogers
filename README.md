@@ -13,11 +13,41 @@ Mr. Roboger's Neighborhood
 * Visual Studio Code
 
 ## Specs
-| **robogers()** | For words beginning in "y": treat as consonant | robogers("your").toEqual("our-yay") |
-| **robogers()** | For words beginning in vowel: add "way" to the end | robogers("ocelot").toEqual("ocelot-way") |
-| **robogers()** | For words beginning with 1 or more consonants: move to end, add "ay"| robogers("should).toEqual("ould-shay") |
-| **robogers()** | If first consonants include "qu": move both to end, add "ay" | robogers("quiet").toEqual("iet-quay") |
-| **robogers()** | Output result to HTML page | Expect to see results on webpage |
+**Describe:** robogers()
+<br/>
+**Test:** For numbers containing 1: replace with the phrase "Beep!"
+<br/>
+**Expect:**  robogers("1").toEqual("Beep!")
+
+**Describe:** robogers()
+<br/>
+**Test:** For numbers containing 2: replace with the phrase "Boop!"
+<br/>
+**Expect:** robogers("2").toEqual("Boop!")
+
+**Describe:** robogers()
+<br/>
+**Test:** For numbers containing 3: replace with the phrase "Won't you be my neighbor?"
+<br/>
+**Expect:** robogers("3").toEqual("Won't you be my neighbor")
+
+**Describe:** robogers()
+<br/>
+**Test:** For numbers containing both a 3 and 2: 3 should apply before 2
+<br/>
+**Expect:** robogers("23").toEqual("Won't you be my neighbor?")
+
+**Describe:** robogers()
+<br/>
+**Test:** For numbers containing both a 2 and 1: 2 should apply before 1
+<br/>
+**Expect:** robogers("21").toEqual("Boop!")
+
+**Describe:** robogers()
+<br/>
+**Test:**  Output result to HTML page
+<br/>
+**Expect:** Expect to see results displayed on webpage
 
 
 ## Description
