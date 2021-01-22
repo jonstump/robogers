@@ -11,6 +11,14 @@ $(document).ready(function() {
     }
   }
 
+  function robogersBoop(array) {
+    for (let i = 0; i < array.length; i++) {
+      if ((array[i]) === "2")
+        numbers.push("Boop!")
+        console.log(numbers);
+    }
+  }
+
   //User Logic
   $('form').submit(function(submit) {
     submit.preventDefault();
@@ -22,7 +30,7 @@ $(document).ready(function() {
 
     function robogers(stringArray) {
       robogersBeep(stringArray);
-      //robogersBoop(stringArray);
+      robogersBoop(stringArray);
       //robogersNeighbor(stringArray);
     }
 
