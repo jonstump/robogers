@@ -9,20 +9,22 @@ $(document).ready(function() {
       numbers.unshift(i);
       numbers = numbers.sort();
     }
-    return numbers;
+    return numbers
   }
 console.log(robogersCountUp(5)) 
 
 
-  function robogersBeep(numbers) {
-    for (let i = 0; i < array.length; i++) {
-      if ((array[i]) === 1) {
-        outputArray.push("Beep!")
-        console.log(numbers);
-      } else outputArray.push(array[i]); 
+  function robogersBeep() {
+    for (const number of numbers){
+      for (let i = 0; i < number; i++) {
+        if ((numbers[i]) === 1) {
+          outputArray.push("Beep!")
+        } else outputArray.push(number);
+      }  
     }
   }
 console.log(outputArray)
+
 
 
 
