@@ -14,16 +14,16 @@ $(document).ready(function() {
 console.log(robogersCountUp(5)) 
 
 
-  function robogersBeep(array) {
+  function robogersBeep(numbers) {
     for (const number of numbers){
-      for (let i = 0; i < array; i++) {
-        if ((array[i]) === 1) {
+      for (let i = -1; i < number; i++) {
+        if ((number) === 1) {
           outputArray.push("Beep!")
-        } else outputArray.push(array)
+        } else outputArray.push(number)
       }  
     }
   }
-console.log(outputArray)
+console.log(robogersBeep(numbers))
 
 
 
