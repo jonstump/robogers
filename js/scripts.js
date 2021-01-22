@@ -1,8 +1,8 @@
 $(document).ready(function() {
 
   //Business Logic
-  let outputArray = [];
-  let numbers = [];
+  const outputArray = [];
+  const numbers = [];
 
   function robogersCountUp(input) {
     for (let i = 0; i <= input; i++) {
@@ -19,20 +19,18 @@ console.log(robogersCountUp(15))
   numbersString;
 
 
-function robogersBeep(numbers) {
-  let numbersString = numbers.toString();
-  let numbersStringSplit = numbersString.split(",");
+function robogersBeep(numbersString) {
   for (array of numbersStringSplit)
-  for (let i = 0; i < array.length; i++) {
-    if ((array[i][0]) === "*3*") {
-      outputArray.push("Won't you be my neighbor?")
-      console.log(outputArray);
-    } else {
-    (outputArray.push(array))
+    for (let i = 0; i < array.length; i++) {
+      if ((array[i][0]) === "*3*") {
+        outputArray.push("Won't you be my neighbor?")
+        console.log(outputArray);
+      } else {
+      (outputArray.push(array))
     } 
   }
 }
-I have no idea how I'm supposed to convert this array to a string without an error message.
+
 
 
 
