@@ -12,18 +12,35 @@ $(document).ready(function() {
   }
 console.log(robogersCountUp(15)) 
 
+function robogersBeep(numbers) {
+  for (let i = 0; i < array.length; i++) {
+    if ((array[i]) === 1) {
+      outputArray.push("Beep!")
+      console.log(outputArray);
+    } else {
+    (outputArray.push(array))
+    } 
+  }
+}
+
+
+
+
+
+
   function robogersNeighbor(numbers) {
-    const numberToString = numbers.toString();
-    for (const number of numbersToString){
-        if ((number) === "*3*") {
+    for (const array of numbers){
+      const number = array[i];
+      const numberString = number.toString();
+        if ((numberString) === "*3*") {
           outputArray.push("Won't you be my neighbor?")
-        } else if ((numbers) !== "*3*") {
-          (outputArray.push(number))
         } else {
-          break;
+          (outputArray.push(number))
         }
-      }  
     }
+  }
+console.log(numberString);
+  
 
 
 
