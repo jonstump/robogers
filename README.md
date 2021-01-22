@@ -15,9 +15,9 @@ Mr. Roboger's Neighborhood
 ## Specs
 **Describe:** robogers()
 <br/>
-**Test:** Countdown of numbers: If user enters 5 and array counting down is created"
+**Test:** Count of numbers: If user enters 5 and array count is created"
 <br/>
-**Expect:**  robogers("5").toEqual([5,4,3,2,1])
+**Expect:**  robogers("5").toEqual([0,1,2,3,4,5])
 
 **Describe:** robogers()
 <br/>

@@ -3,8 +3,15 @@ $(document).ready(function() {
   //Business Logic
   let numbers = []
 
+  function robogersCountdown(input) {
+    let numbers = [];
 
-  
+    for (let i = 1; i <= input; i++) {
+      numbers.unshift(i);
+    }
+    return numbers;
+  } 
+
   function robogersBeep(array) {
     for (let i = 0; i < array.length; i++) {
       if ((array[i]) === "1")
