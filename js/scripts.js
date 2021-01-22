@@ -3,6 +3,8 @@ $(document).ready(function() {
   //Business Logic
   let numbers = []
 
+
+  
   function robogersBeep(array) {
     for (let i = 0; i < array.length; i++) {
       if ((array[i]) === "1")
@@ -37,6 +39,7 @@ $(document).ready(function() {
     console.log(stringArray);
 
     function robogers(stringArray) {
+      robogersCountdown(stringArray);
       robogersBeep(stringArray);
       robogersBoop(stringArray);
       robogersNeighbor(stringArray);

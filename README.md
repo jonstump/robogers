@@ -15,6 +15,12 @@ Mr. Roboger's Neighborhood
 ## Specs
 **Describe:** robogers()
 <br/>
+**Test:** Countdown of numbers: If user enters 5 and array counting down is created"
+<br/>
+**Expect:**  robogers("5").toEqual([5,4,3,2,1])
+
+**Describe:** robogers()
+<br/>
 **Test:** For numbers containing 1: replace with the phrase "Beep!"
 <br/>
 **Expect:**  robogers("10").toEqual("Beep!")
