@@ -18,8 +18,8 @@ console.log(robogersCountUp(15))
   numbersString;
 
 
-function robogersNeighbor(array) {
-    for (let i = 0; i < array.length; i++) {
+function robogersNeighbor(numbersString) {
+    for (let i = 0; i < numbersString.length; i++) {
       if ((numbersString.includes('3'))) {
         outputArray.push("Won't you be my neighbor?")
         console.log(outputArray);
@@ -28,12 +28,6 @@ function robogersNeighbor(array) {
     } 
   }
 }
-
-
-  
-
-
-
 
 
   //User Logic
