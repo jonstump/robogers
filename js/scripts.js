@@ -12,42 +12,24 @@ $(document).ready(function() {
   }
 console.log(robogersCountUp(15)) 
 
-
   const numbersString = numbers.map(function(element) {
     return element.toString();
   });
   numbersString;
 
 
-function robogersBeep(numbersString) {
-  for (array of numbersStringSplit)
+function robogersNeighbor(array) {
     for (let i = 0; i < array.length; i++) {
-      if ((array[i][0]) === "*3*") {
+      if ((numbersString.includes('3'))) {
         outputArray.push("Won't you be my neighbor?")
         console.log(outputArray);
       } else {
-      (outputArray.push(array))
+      (outputArray.push(numbersString[i]))
     } 
   }
 }
 
 
-
-
-
-
-  function robogersNeighbor(numbers) {
-    for (const array of numbers){
-      const number = array[i];
-      const numberString = number.toString();
-        if ((numberString) === "*3*") {
-          outputArray.push("Won't you be my neighbor?")
-        } else {
-          (outputArray.push(number))
-        }
-    }
-  }
-console.log(numberString);
   
 
 
