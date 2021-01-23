@@ -77,19 +77,17 @@ $ git clone https://github.com/jonstump/robogers HERE
 * After you have the folder open that you cloned from Github.com double click the file "index.html"
 * The webpage should open in the default browser set by your machines settings
 
-This quiz can be taken via it's [gh-page](https://jonstump.github.io/URL HERE/)
 
 ## Sources Used
 * [Epicodus](https://www.epicodus.com/)
-* [Bootstrap Docs](https://getbootstrap.com/)
 * [stack overflow](https://stackoverflow.com/)
 * [w3schools](https://www.w3schools.com/)
 * [MDN Web Docs](https://developer.mozilla.org/en-US/)
-* [coolors](https://coolors.co/)
-* [Blade Runner](https://www.imdb.com/title/tt0083658/)
 
 ## Known Bugs
-* 
+* Does not pass replace 3s with 'Won't you be my neighbor?'
+* Does not pass replace 2s with 'Boop!'
+* Does not pass replace 1s with 'Beep!'
 
 ## License
 [MIT](https://mit-license.org/)
