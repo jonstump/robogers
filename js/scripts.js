@@ -12,7 +12,6 @@ $(document).ready(function() {
     return numbers
   }
 
-
   //Function that replaces numbers based on digits
   function robogersNeighbor(array) {
     for (let i = 0; i < array.length; i++) {
@@ -31,20 +30,20 @@ $(document).ready(function() {
       }
     }
   }
+console.log(outputArray)
+
 
   //User Logic
   $('form').submit(function(submit) {
+    $("#result").hide();
     submit.preventDefault();
-    const input = $('input#userNumber').val();   
-    const numbers = robogersNeighbor(input);
-
-  //Turns array of numbers into a string
-  const numbersString = numbers.map(function(element) {
-    return element.toString();
-  });
-  numbersString;
-
-  const result = robogersNeighbor(numbersString);
+    const input = parseInt($('input#userNumber').val());   
+    let numbers = robogersCountUp(input)
+    let numbersString = numbers.map(function(element) {
+      return element.toString();
+    });
+    let outputArray = robogersNeighbor(numbersString);
+    const result = outputArray
   
   $('span.result').text(result);
   $("#result").show()
