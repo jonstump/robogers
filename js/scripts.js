@@ -17,16 +17,19 @@ console.log(robogersCountUp(15))
   });
   numbersString;
 
-function robogersNeighbor(array) {
+  function robogersNeighbor(array) {
     for (let i = 0; i < array.length; i++) {
       if (((array[i]).includes('3'))) {
         outputArray.push("Won't you be my neighbor?")
         console.log(outputArray);
-      } else {
-      (outputArray.push(array[i]))
-    } 
+        } else if 
+        (((array[i]).includes('2'))) {
+        outputArray.push("Boop!")
+        } else {
+          (outputArray.push(array[i]))
+      }
+    }
   }
-}
 
 console.log(robogersCountUp(15))
 console.log(robogersNeighbor(numbersString))
