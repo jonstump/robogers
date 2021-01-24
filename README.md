@@ -21,9 +21,9 @@ Mr. Roboger's Neighborhood
 
 **Describe:** robogers()
 <br/>
-**Test:** For numbers containing 1: replace with the phrase "Beep!"
+**Test:** For numbers containing 3: replace with the phrase "Won't you be my neighbor?"
 <br/>
-**Expect:**  robogers("10").toEqual("Beep!")
+**Expect:** robogers("13").toEqual("Won't you be my neighbor")
 
 **Describe:** robogers()
 <br/>
@@ -33,9 +33,9 @@ Mr. Roboger's Neighborhood
 
 **Describe:** robogers()
 <br/>
-**Test:** For numbers containing 3: replace with the phrase "Won't you be my neighbor?"
+**Test:** For numbers containing 1: replace with the phrase "Beep!"
 <br/>
-**Expect:** robogers("30").toEqual("Won't you be my neighbor")
+**Expect:**  robogers("10").toEqual("Beep!")
 
 **Describe:** robogers()
 <br/>

@@ -1,8 +1,8 @@
 $(document).ready(function() {
 
   //Business Logic
-  const outputArray = [];
-  const numbers = [];
+  var outputArray = [];
+  var numbers = [];
 
   function robogersCountUp(input) {
     for (let i = 0; i <= input; i++) {
@@ -19,7 +19,7 @@ console.log(robogersCountUp(15))
 
 function robogersNeighbor(array) {
     for (let i = 0; i < array.length; i++) {
-      if ((array[i] === ('3'))) {
+      if (((array[i]).includes('3'))) {
         outputArray.push("Won't you be my neighbor?")
         console.log(outputArray);
       } else {
