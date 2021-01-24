@@ -25,6 +25,9 @@ console.log(robogersCountUp(15))
         } else if 
         (((array[i]).includes('2'))) {
         outputArray.push("Boop!")
+        } else if
+        (((array[i]).includes('1'))) {
+        outputArray.push("Beep!")
         } else {
           (outputArray.push(array[i]))
       }
