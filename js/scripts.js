@@ -11,11 +11,7 @@ $(document).ready(function() {
     }
     return numbers
   }
-  //Turns array of numbers into a string
-  const numbersString = numbers.map(function(element) {
-    return element.toString();
-  });
-  numbersString;
+
 
   //Function that replaces numbers based on digits
   function robogersNeighbor(array) {
@@ -36,24 +32,22 @@ $(document).ready(function() {
     }
   }
 
-  console.log(outputArray)
-
-//console.log(robogersCountUp(input))
-//console.log(robogersNeighbor(numbersString))
-
-
   //User Logic
   $('form').submit(function(submit) {
     submit.preventDefault();
     const input = $('input#userNumber').val();   
-    
-    //const numArray = input.split("");
-    //const stringArray = numArray.toString();
-    //console.log(numArray);
-    //console.log(stringArray);
+    const numbers = robogersNeighbor(input);
 
-    robogersCountUp(input) 
-    robogersNeighbor(numbersString);
+  //Turns array of numbers into a string
+  const numbersString = numbers.map(function(element) {
+    return element.toString();
+  });
+  numbersString;
+
+  const result = robogersNeighbor(numbersString);
+  
+  $('span.result').text(result);
+  $("#result").show()
 
   })
 
