@@ -45,8 +45,9 @@ $(document).ready(function() {
     var result = robogersNeighbor(numbersString);
     console.log(numbers);
     console.log(outputArray);
+    console.log(result);
 
-    $('span.result').text(result);
+    $('#result').text(outputArray);
     $("#result").show();
 
   });
