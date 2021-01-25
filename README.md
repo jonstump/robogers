@@ -62,6 +62,7 @@ This is a page that allows a user to do an input and have numbers replaced with 
 
 ## Examples of use
 
+For fun with friends to chat with their robo-neighbor
 
 
 ## Setup/installation Requirements
@@ -85,7 +86,7 @@ $ git clone https://github.com/jonstump/robogers
 * [MDN Web Docs](https://developer.mozilla.org/en-US/)
 
 ## Known Bugs
-* Does not display array for user to see on page.
+
 
 ## License
 [MIT](https://mit-license.org/)

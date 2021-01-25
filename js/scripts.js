@@ -36,6 +36,8 @@ $(document).ready(function() {
   $('form').submit(function(submit) {
     $("#result").text();
     submit.preventDefault();
+    
+    //User's input that converts to string
     const input = parseInt($('input#userNumber').val());   
     let numbers = robogersCountUp(input)
     let numbersString = numbers.map(function(element) {
@@ -45,8 +47,11 @@ $(document).ready(function() {
     var result = robogersNeighbor(numbersString);
     console.log(result);
 
+    //code to show the results
     $('#result').text(outputArray);
     $("#result").show();
+    
+    //code to clear the arrays for rerunning the page
     outputArray.length = 0;
     numbers.length = 0;
     numbersString.length = 0;
