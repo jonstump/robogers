@@ -1,8 +1,8 @@
 $(document).ready(function() {
 
   //Business Logic
-  var outputArray = [];
   var numbers = [];
+  let = outputArray = [];
 
   //Takes input and creates an array of numbers
   function robogersCountUp(input) {
@@ -30,7 +30,6 @@ $(document).ready(function() {
       }
     }
   }
-console.log(outputArray)
 
 
   //User Logic
@@ -42,9 +41,11 @@ console.log(outputArray)
     let numbersString = numbers.map(function(element) {
       return element.toString();
     });
-    let outputArray = robogersNeighbor(numbersString);
-    const result = outputArray
-  
+    
+    var result = robogersNeighbor(numbersString);
+    console.log(numbers);
+    console.log(outputArray);
+
     $('span.result').text(result);
     $("#result").show();
 
