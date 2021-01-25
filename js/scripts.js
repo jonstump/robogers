@@ -45,9 +45,8 @@ console.log(outputArray)
     let outputArray = robogersNeighbor(numbersString);
     const result = outputArray
   
-  $('span.result').text(result);
-  $("#result").show()
+    $('span.result').text(result);
+    $("#result").show();
 
-  })
-
-})
+  });
+});

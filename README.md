@@ -66,12 +66,12 @@ This is a page that allows a user to do an input and have numbers replaced with 
 
 ## Setup/installation Requirements
 
-* Copy the following link to your clipboard: https://github.com/jonstump/robogers HERE
+* Copy the following link to your clipboard: https://github.com/jonstump/robogers
 * Open a Bash Terminal
 * In your terminal window, navigate to a directory that you would like to clone the repository to
 * Within your git bash terminal type in 'git clone' and then paste in the link from your clipboard by right clicking and selecting 'paste' example below:
 ```bash
-$ git clone https://github.com/jonstump/robogers HERE
+$ git clone https://github.com/jonstump/robogers
 ```
 * After the page has been cloned to your chosen directory locate the folder and open it.
 * After you have the folder open that you cloned from Github.com double click the file "index.html"
@@ -85,9 +85,7 @@ $ git clone https://github.com/jonstump/robogers HERE
 * [MDN Web Docs](https://developer.mozilla.org/en-US/)
 
 ## Known Bugs
-* Does not pass replace 3s with 'Won't you be my neighbor?'
-* Does not pass replace 2s with 'Boop!'
-* Does not pass replace 1s with 'Beep!'
+* Does not display array for user to see on page.
 
 ## License
 [MIT](https://mit-license.org/)
