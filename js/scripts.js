@@ -1,13 +1,13 @@
 $(document).ready(function() {
 
   //Business Logic
-  var numbers = [];
-  let = outputArray = [];
+  const numbers = [];
+  const outputArray = [];
 
   //Takes input and creates an array of numbers
   function robogersCountUp(input) {
     for (let i = 0; i <= input; i++) {
-      numbers.unshift(i);
+      numbers.push(i);
     }
     return numbers
   }
@@ -34,7 +34,7 @@ $(document).ready(function() {
 
   //User Logic
   $('form').submit(function(submit) {
-    $("#result").hide();
+    $("#result").text();
     submit.preventDefault();
     const input = parseInt($('input#userNumber').val());   
     let numbers = robogersCountUp(input)
@@ -43,12 +43,14 @@ $(document).ready(function() {
     });
     
     var result = robogersNeighbor(numbersString);
-    console.log(numbers);
-    console.log(outputArray);
     console.log(result);
 
     $('#result').text(outputArray);
     $("#result").show();
+    outputArray.length = 0;
+    numbers.length = 0;
+    numbersString.length = 0;
+
 
   });
 });
