@@ -1,38 +1,35 @@
-$(document).ready(function() {
-
-  //Business Logic
-  const numbers = [];
-  const outputArray = [];
-
-  //Takes input and creates an array of numbers
-  function robogersCountUp(input) {
-    for (let i = 0; i <= input; i++) {
+//Business Logic
+ //Takes input and creates an array of numbers
+function robogersCountUp(input) {
+const numbers = []; 
+  for (let i = 0; i <= input; i++) {
       numbers.push(i);
-    }
-    return numbers
   }
+  return numbers
+}
 
-  //Function that replaces numbers based on digits
-  function robogersNeighbor(array) {
-    for (let i = 0; i < array.length; i++) {
-      if (((array[i]).includes('3'))) {
-        outputArray.push("Won't you be my neighbor?") //This if statement replaces any number with a 3 in it with 'Won't you be my neighbor?'
-        } else if 
-        (((array[i]).includes('2'))) {
-        outputArray.push("Boop!")
-        //This else if statement replaces any number with the digit 2, and not a 3, with 'Boop!'
-        } else if
-        (((array[i]).includes('1'))) {
-        outputArray.push("Beep!")
-        //This else if statement replaces any number with the digit 1, and not a 2 or 3, with 'Beep!'
-        } else {
-          (outputArray.push(array[i]))
-      }
-    }
-  }
+ //Function that replaces numbers based on digits
+function robogersNeighbor(array) {
+const outputArray = [];
+  for (let i = 0; i < array.length; i++) {
+    if (((array[i]).includes('3'))) {
+      outputArray.push("Won't you be my neighbor?") //This if statement replaces any number with a 3 in it with 'Won't you be my neighbor?'
+      } else if 
+      (((array[i]).includes('2'))) {
+      outputArray.push("Boop!")
+      //This else if statement replaces any number with the digit 2, and not a 3, with 'Boop!'
+      } else if
+      (((array[i]).includes('1'))) {
+      outputArray.push("Beep!")
+      //This else if statement replaces any number with the digit 1, and not a 2 or 3, with 'Beep!'
+      } else {
+        (outputArray.push(array[i]))
+    } 
+  } return outputArray
+} 
 
-
-  //User Logic
+//User Logic
+$(document).ready(function() {
   $('form').submit(function(submit) {
     $("#result").text();
     submit.preventDefault();
@@ -48,14 +45,7 @@ $(document).ready(function() {
     console.log(result);
 
     //code to show the results
-    $('#result').text(outputArray);
+    $('#result').text(result);
     $("#result").show();
-    
-    //code to clear the arrays for rerunning the page
-    outputArray.length = 0;
-    numbers.length = 0;
-    numbersString.length = 0;
-
-
   });
 });
