@@ -12,48 +12,29 @@ Mr. Roboger's Neighborhood
 * Bootstrap
 * Visual Studio Code
 
-## Specs
-**Describe:** robogers()
+## Specs / Tests
+**Describe:** robogersCountUp()
 <br/>
-**Test:** Count of numbers: If user enters 5 and array count is created"
+**Test1:** Count of numbers: If user enters 5 and array count is created"
 <br/>
 **Expect:**  robogers("5").toEqual([0,1,2,3,4,5])
 
-**Describe:** robogers()
+**Describe:** robogersNeighbor()
 <br/>
-**Test:** For numbers containing 3: replace with the phrase "Won't you be my neighbor?"
+**Test2:** For numbers containing 3: replace with the phrase "Won't you be my neighbor?"
 <br/>
-**Expect:** robogers("13").toEqual("Won't you be my neighbor")
+**Expect:** robogers("13").toEqual("0,1,2,Won't you be my neighbor?,4,5,6,7,8,9,10,11,12,Won't you be my neighbor?")
 
-**Describe:** robogers()
 <br/>
-**Test:** For numbers containing 2: replace with the phrase "Boop!"
+**Test3:** For numbers containing the digit 2 and not the digit 3 : replace with the phrase "Boop!"
 <br/>
-**Expect:** robogers("20").toEqual("Boop!")
+**Expect:** robogers("13").toEqual(""0,1,Boop!,Won't you be my neighbor?,4,5,6,7,8,9,10,11,Boop!,Won't you be my neighbor?"")
 
-**Describe:** robogers()
 <br/>
-**Test:** For numbers containing 1: replace with the phrase "Beep!"
+**Test4:** For numbers containing the digit 1 and neither the digit 2 or 3: replace with the phrase "Beep!"
 <br/>
-**Expect:**  robogers("10").toEqual("Beep!")
+**Expect:**  robogers("13").toEqual("0,Beep!,Boop!,Won't you be my neighbor?,4,5,6,7,8,9,Beep!,Beep!,Boop!,Won't you be my neighbor?")
 
-**Describe:** robogers()
-<br/>
-**Test:** For numbers containing both a 3 and 2: 3 should apply before 2
-<br/>
-**Expect:** robogers("23").toEqual("Won't you be my neighbor?")
-
-**Describe:** robogers()
-<br/>
-**Test:** For numbers containing both a 2 and 1: 2 should apply before 1
-<br/>
-**Expect:** robogers("21").toEqual("Boop!")
-
-**Describe:** robogers()
-<br/>
-**Test:**  Output result to HTML page
-<br/>
-**Expect:** Expect to see results displayed on webpage
 
 
 ## Description
@@ -76,7 +57,7 @@ $ git clone https://github.com/jonstump/robogers
 ```
 * After the page has been cloned to your chosen directory locate the folder and open it.
 * After you have the folder open that you cloned from Github.com double click the file "index.html"
-* The webpage should open in the default browser set by your machines settings
+* The webpage should open in the default browser set by your machine's settings
 
 
 ## Sources Used

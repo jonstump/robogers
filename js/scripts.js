@@ -1,5 +1,5 @@
 //Business Logic
- //Takes input and creates an array of numbers
+//Takes input and creates an array of numbers
 function robogersCountUp(input) {
 const numbers = []; 
   for (let i = 0; i <= input; i++) {
@@ -42,7 +42,6 @@ $(document).ready(function() {
     });
     
     var result = robogersNeighbor(numbersString);
-    console.log(result);
 
     //code to show the results
     $('#result').text(result);
